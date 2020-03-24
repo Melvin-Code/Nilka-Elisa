@@ -12,7 +12,6 @@ app.use((err, req, res, next) => {
   if (!res.headersSent) {
     res.status(500).send({ msg: 'Check the error on console' });
   }
-  
 });
 
 const server = http.createServer(app);
